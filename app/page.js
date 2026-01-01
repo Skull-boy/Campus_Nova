@@ -53,20 +53,32 @@ export default function Home() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-primary-50 via-white to-secondary-50">
             {/* Hero Section */}
-            <div className="px-6 pt-12 pb-8">
+            <div className="px-6 pt-16 pb-8">
                 <div className="max-w-md mx-auto text-center">
-                    <div className="inline-flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-gradient-to-br from-primary-600 to-secondary-600 shadow-glow animate-float">
-                        <Sparkles className="w-8 h-8 text-white" />
+                    {/* Animated Logo */}
+                    <div className="mb-6 overflow-hidden">
+                        <h1 className="text-5xl font-extrabold mb-2">
+                            <span className="inline-block animate-[slideDown_0.6s_ease-out]">
+                                <span className="inline-block bg-gradient-to-r from-primary-600 via-secondary-600 to-primary-600 bg-clip-text text-transparent animate-[shimmer_3s_ease-in-out_infinite] bg-[length:200%_100%]">
+                                    Campus
+                                </span>
+                            </span>
+                            {' '}
+                            <span className="inline-block animate-[slideDown_0.6s_ease-out_0.1s_both]">
+                                <span className="inline-block bg-gradient-to-r from-secondary-600 via-accent-500 to-secondary-600 bg-clip-text text-transparent animate-[shimmer_3s_ease-in-out_0.5s_infinite] bg-[length:200%_100%]">
+                                    Hero
+                                </span>
+                            </span>
+                        </h1>
+                        <div className="h-1 w-24 mx-auto bg-gradient-to-r from-primary-600 to-secondary-600 rounded-full animate-[slideUp_0.8s_ease-out_0.3s_both]"></div>
                     </div>
-                    <h1 className="text-4xl font-bold mb-3 gradient-text">
-                        Campus Hero
-                    </h1>
-                    <p className="text-gray-600 text-lg mb-6">
+
+                    <p className="text-gray-600 text-lg mb-8 animate-[fadeIn_0.8s_ease-out_0.4s_both] px-4">
                         Your ultimate college companion for clubs, mentors, roadmaps, and growth
                     </p>
 
                     {/* Stats */}
-                    <div className="flex justify-around mb-8 py-6 px-4 rounded-2xl glass">
+                    <div className="flex justify-around mb-8 py-6 px-4 rounded-2xl glass animate-[fadeIn_0.8s_ease-out_0.6s_both]">
                         {stats.map((stat, index) => (
                             <div key={index} className="text-center">
                                 <div className="text-2xl font-bold text-primary-600">{stat.value}</div>

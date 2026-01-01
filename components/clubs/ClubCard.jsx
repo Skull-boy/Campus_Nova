@@ -42,20 +42,18 @@ export default function ClubCard({ club }) {
                 </div>
             )}
 
-            <div className="flex gap-3">
+            <div className="grid grid-cols-2 gap-3">
                 <Button
                     variant="primary"
                     size="sm"
-                    className="flex-1"
                     onClick={() => window.open(club.website, '_blank')}
                 >
-                    <ExternalLink className="w-4 h-4 mr-2" />
+                    <ExternalLink className="w-4 h-4" />
                     Visit Site
                 </Button>
                 <Button
                     variant="secondary"
                     size="sm"
-                    className="flex-1"
                     onClick={() => setExpanded(!expanded)}
                 >
                     {expanded ? 'Hide Details' : 'Join Process'}

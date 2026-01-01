@@ -43,23 +43,21 @@ export default function MentorCard({ mentor }) {
             </div>
 
             {/* Contact Buttons */}
-            <div className="flex gap-3">
+            <div className="grid grid-cols-2 gap-3">
                 <Button
                     variant="primary"
                     size="sm"
-                    className="flex-1"
                     onClick={() => window.open(mentor.linkedin, '_blank')}
                 >
-                    <Linkedin className="w-4 h-4 mr-2" />
+                    <Linkedin className="w-4 h-4" />
                     LinkedIn
                 </Button>
                 <Button
                     variant="secondary"
                     size="sm"
-                    className="flex-1"
                     onClick={() => window.location.href = `mailto:${mentor.email}`}
                 >
-                    <Mail className="w-4 h-4 mr-2" />
+                    <Mail className="w-4 h-4" />
                     Email
                 </Button>
             </div>
