@@ -44,9 +44,9 @@ const features = [
 ]
 
 const stats = [
-    { label: 'Active Clubs', value: '15+' },
-    { label: 'Mentors', value: '50+' },
-    { label: 'Students', value: '1000+' },
+    { label: 'Active Clubs', value: '10+' },
+    { label: 'Mentors', value: '10+' },
+    { label: 'Students', value: '100+' },
 ]
 
 export default function Home() {
