@@ -224,7 +224,7 @@ export default function SignupPage() {
                         <form onSubmit={(e) => { e.preventDefault(); handleNext(); }} className="space-y-4">
                             <div className="text-center mb-4">
                                 <h3 className="text-lg font-semibold text-gray-800">Basic Information</h3>
-                                <p className="text-sm text-gray-600">Let's get to know you</p>
+                                <p className="text-sm text-gray-600">Let&apos;s get to know you</p>
                             </div>
 
                             <Input
@@ -275,8 +275,8 @@ export default function SignupPage() {
                                         <div className="flex items-center justify-between mb-1">
                                             <span className="text-xs text-gray-600">Password strength</span>
                                             <span className={`text-xs font-medium ${passwordStrength.strength === 100 ? 'text-green-600' :
-                                                    passwordStrength.strength === 66 ? 'text-yellow-600' :
-                                                        'text-red-600'
+                                                passwordStrength.strength === 66 ? 'text-yellow-600' :
+                                                    'text-red-600'
                                                 }`}>{passwordStrength.label}</span>
                                         </div>
                                         <div className="w-full h-1.5 bg-gray-200 rounded-full overflow-hidden">
@@ -451,7 +451,7 @@ export default function SignupPage() {
                             {formData.role === 'admin' && (
                                 <div className="text-center py-8">
                                     <p className="text-gray-600">
-                                        Admin accounts require approval. You'll receive access once verified by the system administrator.
+                                        Admin accounts require approval. You&apos;ll receive access once verified by the system administrator.
                                     </p>
                                 </div>
                             )}

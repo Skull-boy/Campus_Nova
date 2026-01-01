@@ -54,12 +54,12 @@ export default function ForgotPasswordPage() {
                             </svg>
                         </div>
                         <h1 className="text-3xl font-bold gradient-text mb-2">Check Your Email</h1>
-                        <p className="text-gray-600">We've sent password reset instructions to <strong>{email}</strong></p>
+                        <p className="text-gray-600">We&apos;ve sent password reset instructions to <strong>{email}</strong></p>
                     </div>
 
                     <Card className="p-6">
                         <p className="text-sm text-gray-600 mb-4">
-                            If you don't see the email, check your spam folder or try again.
+                            If you don&apos;t see the email, check your spam folder or try again.
                         </p>
                         <Link href="/auth/login">
                             <Button className="w-full">
@@ -80,7 +80,7 @@ export default function ForgotPasswordPage() {
                         <Sparkles className="w-8 h-8 text-white" />
                     </div>
                     <h1 className="text-3xl font-bold gradient-text mb-2">Forgot Password?</h1>
-                    <p className="text-gray-600">No worries, we'll send you reset instructions</p>
+                    <p className="text-gray-600">No worries, we&apos;ll send you reset instructions</p>
                 </div>
 
                 <Card className="p-6">
